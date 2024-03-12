@@ -26,7 +26,7 @@ btn_guardar = Button(root, text = "Guardar Posición (Q)", command = guardar_pos
 btn_guardar.pack()
 
 #Botón para restaurar la posición.
-btn_restaurar = Button(root, text = "Restaurar Posición (E)", command = restaurar_posicion)
+btn_restaurar = Button(root, text = "Restaurar Posición (W)", command = restaurar_posicion)
 btn_restaurar.pack()
 
 #Función para manejar eventos de teclado.
@@ -34,7 +34,7 @@ def tecla_presionada(tecla: object) -> None:
     try:
         if (tecla.char == "q"):
             guardar_posicion()
-        elif (tecla.char == "q"):
+        elif (tecla.char == "w"):
             restaurar_posicion()
     except AttributeError:
         print("Error")
